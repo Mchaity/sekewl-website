@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | SeKewl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f5f0eb;
+            color: #1a1a1a;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .serif-title {
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Top Navigation Header -->
+    <header class="sticky top-0 z-50 bg-[#f5f0eb]/90 backdrop-blur-md px-6 py-4 flex items-center justify-between border-b border-black/5">
+        
+        <!-- Left Navigation -->
+        <div class="flex items-center space-x-4">
+            <button aria-label="Search" class="p-1 text-gray-800 hover:opacity-75">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </button>
+
+            <a href="products.html" class="flex items-center space-x-1.5 text-gray-800 font-medium text-sm hover:opacity-75 transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Centered Logo -->
+        <a href="index.html" class="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+            <img src="SeKewl Logo.png" alt="SeKewl Logo" class="h-8 w-auto object-contain">
+        </a>
+
+        <!-- Right Menu Icons -->
+        <div class="flex items-center space-x-4">
+            <button aria-label="Account" class="p-1 text-gray-800 hover:opacity-75">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                </svg>
+            </button>
+            <button aria-label="Cart" class="p-1 text-gray-800 hover:opacity-75">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-5xl mx-auto px-5 py-8 space-y-8 w-full">
+        
+        <section class="text-center space-y-2">
+            <h1 class="text-3xl font-normal serif-title tracking-wide text-gray-900">Uniform & Essentials</h1>
+            <p class="text-gray-600 text-sm">Engineered for comfort, tailored for precision.</p>
+        </section>
+
+        <!-- Product Catalog Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+
+            <!-- Product Card 1: SeKewl Pants (Links to pants.html) -->
+            <a href="pants.html" class="bg-white/60 p-6 rounded-3xl backdrop-blur-sm border border-black/5 space-y-5 flex flex-col justify-between group hover:border-black/30 transition">
+                <div class="space-y-4">
+                    <div class="rounded-xl overflow-hidden aspect-[4/4] bg-stone-200">
+                        <img src="Model 1.png" alt="SeKewl Pants" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">SeKewl Pants</h2>
+                        <p class="text-md font-medium text-gray-700 mt-1">R 599.00</p>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <span class="block text-center w-full bg-black text-white py-3 rounded-xl font-medium text-sm group-hover:bg-gray-800 transition">
+                        View Product
+                    </span>
+                </div>
+            </a>
+
+            <!-- Product Card 2: SeKewl Socks -->
+            <div class="bg-white/60 p-6 rounded-3xl backdrop-blur-sm border border-black/5 space-y-5 flex flex-col justify-between opacity-90">
+                <div class="space-y-4">
+                    <div class="rounded-xl overflow-hidden aspect-[4/4] bg-stone-200">
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop" alt="SeKewl Socks" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">SeKewl Socks</h2>
+                        <p class="text-md font-medium text-gray-700 mt-1">R 149.00</p>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <button disabled class="w-full bg-gray-100 text-gray-400 py-3 rounded-xl font-medium text-sm border border-black/5 cursor-not-allowed">
+                        Coming Soon
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Card 3: SeKewl Hoodie -->
+            <div class="bg-white/60 p-6 rounded-3xl backdrop-blur-sm border border-black/5 space-y-5 flex flex-col justify-between opacity-90">
+                <div class="space-y-4">
+                    <div class="rounded-xl overflow-hidden aspect-[4/4] bg-stone-200">
+                        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=1000&auto=format&fit=crop" alt="SeKewl Heavyweight Hoodie" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">SeKewl Heavyweight Hoodie</h2>
+                        <p class="text-md font-medium text-gray-700 mt-1">R 799.00</p>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <button disabled class="w-full bg-gray-100 text-gray-400 py-3 rounded-xl font-medium text-sm border border-black/5 cursor-not-allowed">
+                        Coming Soon
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Card 4: SeKewl Cap -->
+            <div class="bg-white/60 p-6 rounded-3xl backdrop-blur-sm border border-black/5 space-y-5 flex flex-col justify-between opacity-90">
+                <div class="space-y-4">
+                    <div class="rounded-xl overflow-hidden aspect-[4/4] bg-stone-200">
+                        <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=1000&auto=format&fit=crop" alt="SeKewl Minimalist Cap" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">SeKewl Minimalist Cap</h2>
+                        <p class="text-md font-medium text-gray-700 mt-1">R 249.00</p>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <button disabled class="w-full bg-gray-100 text-gray-400 py-3 rounded-xl font-medium text-sm border border-black/5 cursor-not-allowed">
+                        Coming Soon
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Ribbon -->
+    <footer class="text-center py-8 text-xs text-gray-500 border-t border-black/5 mt-12 space-y-2">
+        <div class="flex justify-center space-x-4">
+            <a href="#" class="hover:underline">Terms and Policies</a>
+        </div>
+    </footer>
+
+</body>
+</html>
