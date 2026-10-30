@@ -15,7 +15,7 @@
             font-family: Georgia, Cambria, "Times New Roman", Times, serif;
             font-style: italic;
         }
-    </style>Hi
+    </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col justify-between">
 
@@ -31,7 +31,6 @@
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
                 </svg>
-                <span>Products</span>
             </a>
         </div>
 
@@ -66,15 +65,15 @@
                          class="w-full h-full object-cover transition duration-300">
                 </div>
 
-                <div class="flex gap-2 justify-center">
-                    <button onclick="switchImage(this, 'Model 1.png')" class="thumb-btn w-16 h-16 rounded-lg overflow-hidden border-2 border-black focus:outline-none">
-                        <img src="Model 1.png" class="w-full h-full object-cover" alt="Model View">
-                    </button>
-                    <button onclick="switchImage(this, 'Invisible Mannequin.png')" class="thumb-btn w-16 h-16 rounded-lg overflow-hidden border-2 border-transparent hover:border-black/40 focus:outline-none">
-                        <img src="Invisible Mannequin.png" class="w-full h-full object-cover" alt="Mannequin View">
-                    </button>
-                </div>
+            <div class="flex gap-2 justify-center">
+                <button onclick="switchImage(this, 'Model 1.png')" class="thumb-btn w-16 h-16 rounded-lg overflow-hidden border-2 border-black bg-stone-200">
+                    <img src="Model 1.png" class="w-full h-full object-contain" alt="Model View">
+                </button>
+                <button onclick="switchImage(this, 'Invisible Mannequin.png')" class="thumb-btn w-16 h-16 rounded-lg overflow-hidden border-2 border-transparent bg-stone-200">
+                    <img src="Invisible Mannequin.png" class="w-full h-full object-contain" alt="Mannequin View">
+                </button>
             </div>
+
 
             <!-- Title & Price -->
             <div>
