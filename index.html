@@ -63,32 +63,26 @@
         <!-- Homepage Content -->
 <main class="max-w-4xl mx-auto px-6 py-12 flex flex-col justify-center text-center space-y-10">
 
-    <!-- Hero Section -->
-    <section class="space-y-6">
-        <h1 class="text-4xl font-bold tracking-tight text-gray-900">Essential Uniforms, Elevated.</h1>
-        <p class="text-lg text-gray-600 max-w-xl mx-auto">Experience smart-stretch fabric designed for style, durability, and everyday comfort.</p>
-        <a href="products.html" class="inline-block bg-black text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-gray-800 transition">
-            Shop Products
-        </a>
-    </section>
+                <!-- Hero Section with Background Doodles -->
+            <section class="relative rounded-3xl overflow-hidden py-16 px-6 flex flex-col items-center justify-center text-center space-y-6">
+                
+                <!-- Background Doodle Image Layer -->
+                <div class="absolute inset-0 z-0 flex items-center justify-center opacity-25 pointer-events-none">
+                    <img src="sekewl background.jpeg" alt="Background Doodles" class="w-full h-full object-cover">
+                </div>
 
-                <!-- Hero Section -->
-            <section class="space-y-6">
-                <h1 class="text-4xl font-bold tracking-tight text-gray-900">Essential Uniforms, Elevated.</h1>
-                <p class="text-lg text-gray-600 max-w-xl mx-auto">Experience smart-stretch fabric designed for style, durability, and everyday comfort.</p>
-                <div class="space-y-8 flex flex-col items-center">
-                    <a href="products.html" class="inline-block bg-black text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-gray-800 transition">
-                        Shop Products
-                    </a>
-                    
-                    <!-- Doodles Image (Transparent Background) -->
-                    <div class="w-full max-w-lg px-4 flex justify-center py-4">
-                        <img src="background.png" 
-                             alt="SeKewl Doodles Pattern" 
-                             class="w-full h-auto max-h-[160px] object-contain opacity-80 pointer-events-none">
+                <!-- Content Layer (Sits on top of the background) -->
+                <div class="relative z-10 space-y-6 max-w-xl mx-auto">
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900">Essential Uniforms, Elevated.</h1>
+                    <p class="text-lg text-gray-600">Experience smart-stretch fabric designed for style, durability, and everyday comfort.</p>
+                    <div>
+                        <a href="products.html" class="inline-block bg-black text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-gray-800 transition shadow-md">
+                            Shop Products
+                        </a>
                     </div>
                 </div>
             </section>
+
 
 
     <!-- Brand Pitch / Description Section -->
